@@ -27,7 +27,7 @@ This project demonstrates **Role-Based Access Control (RBAC)** using **JSON Web 
 User Model: Handles user authentication, authorization, and validation.
 Post Model: Manages CRUD operations for posts in the MongoDB database.
 
-# API Flows
+## API Flows
 Use the Postman Collection to explore all endpoints.
 
 ## Key Endpoints:
@@ -46,7 +46,7 @@ When the server initializes and the User collection is empty, an Admin account i
 * Email: admin@admin.com
 * Password: admin
 
-# Folder Structure
+## Folder Structure
 * validator: Contains logic for validating user inputs.
 * routes: Defines API endpoints and associates them with middlewares.
 * models: Database schemas used across the project.
@@ -54,7 +54,7 @@ When the server initializes and the User collection is empty, an Admin account i
 * controller: Manages business logic and database operations.
 * config: Stores configuration details like JWT secrets.
 
-# Authorization and RBAC Details
+## Authorization and RBAC Details
 JWT is used to authenticate users and embed their roles within the token payload. Each API endpoint enforces role-specific permissions:
 
 * Authentication: Validates the JWT token in request headers.
@@ -69,5 +69,5 @@ JWT is used to authenticate users and embed their roles within the token payload
 * Security Note:
     * All CRUD operations require JWT-based authentication, and only authorized users with appropriate roles can perform certain actions.
 
-# Security Note:
+## Security Note:
 All CRUD operations require JWT-based authentication, and only authorized users with appropriate roles can perform certain actions.
